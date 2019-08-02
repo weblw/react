@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react'
+// import JsxText from './JsxTest';
+// import StateMgt from './components/StateMgt'
+// import EventHandle from './components/EventHandle'
+// import LifeCycle from './components/LifeCycle'
+// import ContextTest from './components/ContextTest'
+// import Hoc from './components/Hoc'
+// import HocTest from './components/HocTest'
+// import HocTest1 from './components/HocTest1'
+// import Composition from './components/Composition'
+// import Composition2 from './components/Composition2'
+// import Composition3 from './components/Composition3'
+// import Composition4 from './components/Composition4'
+// import HookTest from './components/HookTest'
+// import HookTest2 from './components/HookTest2'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Button from 'antd/lib/button'
+// import 'antd/dist/antd.css'
+
+import WrappedNormalLoginForm from './components/WrappedNormalLoginForm'
+
+class App extends Component{
+  // state={props:'some content'}
+  // componentDidMount(){
+  //   this.setState({props:'new content'})
+  //   setTimeout(()=>{
+  //     this.setState({props:''})
+  //   },2000)
+  // }
+  render(){
+    return (
+      <div>
+        {/* <h2>{props.title}</h2> */}
+        {/* <JsxText /> */}
+        {/* <StateMgt /> */}
+        {/* <EventHandle /> */}
+        {/* <LifeCycle /> */}
+        {/* {this.state.props && <LifeCycle props={this.state.props} />} */}
+        {/* <ContextTest /> */}
+        {/* <Hoc /> */}
+        {/* <HocTest /> */}
+        {/* <HocTest1 /> */}
+        {/* <Composition /> */}
+        {/* <Composition2 /> */}
+        {/* <Composition3 /> */}
+        {/* <Composition4 /> */}
+        {/* <HookTest /> */}
+        {/* <HookTest2 /> */}
+        {/* <Button type='primary'>Button</Button> */}
+        <WrappedNormalLoginForm />
+      </div>
+    )
+  }  
 }
 
-export default App;
+export default App
