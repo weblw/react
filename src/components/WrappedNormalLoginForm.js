@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
-import {From,Icon,Input,Button} from 'antd'
+import {Form,Icon,Input,Button} from 'antd'
 
-class NormalLoginFrom extends Component{
+class NormalLoginForm extends Component{
   handleSubmit=e=>{
     e.preventDefault()
     this.props.form.validateFields((err,values)=>{
@@ -13,15 +13,15 @@ class NormalLoginFrom extends Component{
   render(){
     const {getFieldDecorator}=this.props.form
     return (
-      <From onSubmit={this.handleSubmit} className='login-from'>
-        <From.Item>
+      <Form onSubmit={this.handleSubmit} className='login-Form'>
+        <Form.Item>
           {getFieldDecorator('userName',{
             rules:[{required:true,message:'请输入用户名！'}]
           })(
             <Input prefix={<Icon type='user' style={{color:'agba(0,0,0,.25)'}} />} placeholder='用户名' />
           )}
-        </From.Item>
-        <From.Item>
+        </Form.Item>
+        <Form.Item>
           {getFieldDecorator('password',{
             rules:[{required:true,message:'请输入密码'}]
           })(
@@ -31,16 +31,16 @@ class NormalLoginFrom extends Component{
               placeholder='password'
             />
           )}
-        </From.Item>
-        <From.Item>
+        </Form.Item>
+        <Form.Item>
           <Button type='primary' htmlType='submit' className='login-form-button'>
             Log in
           </Button>
-        </From.Item>
-      </From>
+        </Form.Item>
+      </Form>
     )
   }
 }
 
-const WrappedNormalLoginForm=From.create({name:'normal_login'})(NormalLoginFrom)
+const WrappedNormalLoginForm=Form.create({name:'normal_login'})(NormalLoginForm)
 export default WrappedNormalLoginForm

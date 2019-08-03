@@ -2,6 +2,16 @@ import React from 'react'
 import ReactDom from 'react-dom'
 
 import App from './App'
+import store from './store'
+import {Provider} from 'react-redux'
+
+ReactDom.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.querySelector('#root')
+)
+
 
 // import logo from './logo.svg'
 // import style from './index.module.css'
@@ -36,4 +46,13 @@ import App from './App'
 //     <img src={logo} style={{width:100}} className={style.img} />
 //   </div>
 // )
-ReactDom.render(<App title='可开吧真不错'/>,document.getElementById('root'))
+// const render=()=>{
+//   ReactDom.render(
+//     <App title='可开吧真不错'/>,
+//     document.getElementById('root')
+//   )
+// }
+
+// render()
+
+// store.subscribe(render)

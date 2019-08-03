@@ -17,7 +17,13 @@ import React,{Component} from 'react'
 // import Button from 'antd/lib/button'
 // import 'antd/dist/antd.css'
 
-import WrappedNormalLoginForm from './components/WrappedNormalLoginForm'
+// import WrappedNormalLoginForm from './components/WrappedNormalLoginForm'
+// import KfromTest from './components/KformTest'
+// import Dialog,{Dialog2} from './components/Dialog'
+// import Tree from './components/Tree'
+// import CommentList from './components/CommentList'
+
+import ReduxTest from './components/ReduxTest'
 
 class App extends Component{
   // state={props:'some content'}
@@ -47,7 +53,13 @@ class App extends Component{
         {/* <HookTest /> */}
         {/* <HookTest2 /> */}
         {/* <Button type='primary'>Button</Button> */}
-        <WrappedNormalLoginForm />
+        {/* <WrappedNormalLoginForm /> */}
+        {/* <KfromTest /> */}
+        {/* <Dialog>tets1</Dialog> */}
+        {/* <Dialog2>test2</Dialog2> */}
+        {/* <Tree /> */}
+        {/* <CommentList /> */}
+        <ReduxTest />
       </div>
     )
   }  
