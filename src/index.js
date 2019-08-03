@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 
 import App from './App'
 import store from './store'
-import {Provider} from 'react-redux'
+import {Provider} from './store/KreactRedux'
 
 ReactDom.render(
   <Provider store={store}>

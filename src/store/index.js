@@ -1,4 +1,4 @@
-import {createStore,applyMiddleware} from 'redux'
+import {createStore,applyMiddleware,combineReducers} from 'redux'
 import logger from 'redux-logger'
 import thunk from 'redux-thunk'
 import {counterReducer} from './conuter'
@@ -15,7 +15,7 @@ import {counterReducer} from './conuter'
 // }
 
 const store =createStore(
-  counterReducer,
+  combineReducers({counter:counterReducer}),
   applyMiddleware(logger,thunk)
 )
 

@@ -1,19 +1,19 @@
 // reducer创建
 export const counterReducer =(state=0,action)=>{
-  const num=action.payload||1
+  // const num=action.payload||1
   switch(action.type){
     case 'add':
-      return state+num
+      return state+1
     case 'minus':
-      return state-num
+      return state-1
     default:
       return state
   }
 }
 
 // action creator
-export const add=num=>({type:'add',payload:num})
-export const minus=num=>({type:'minus',payload:num})
+export const add=num=>({type:'add'})
+export const minus=num=>({type:'minus'})
 // 异步调用返回的是函数
 export const asyncAdd=(dispatch,getState)=>dispatch=>{
   // 异步调用执行在这里操作

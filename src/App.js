@@ -24,6 +24,7 @@ import React,{Component} from 'react'
 // import CommentList from './components/CommentList'
 
 import ReduxTest from './components/ReduxTest'
+// import MyReduxTest from './components/MyReduxTest'
 
 class App extends Component{
   // state={props:'some content'}
@@ -60,6 +61,7 @@ class App extends Component{
         {/* <Tree /> */}
         {/* <CommentList /> */}
         <ReduxTest />
+        {/* <MyReduxTest /> */}
       </div>
     )
   }  
